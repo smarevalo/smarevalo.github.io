@@ -33,11 +33,11 @@
     <p id="demo"></p>
 
     <script>
-        /*var texto = fetch('https://randomuser.me/api/')
+        var texto = fetch('https://randomuser.me/api/')
         .then((response) => response.json());
-        .then((json) => console.log(json));*/
+        //.then((json) => console.log(json));
         
-        var texto = '{"results":[{"gender":"male","name":{"title":"Mr","first":"Mason","last":"Hughes"},"location":{"street":{"number":4942,"name":"Stuart Street"},"city":"New Plymouth","state":"Canterbury","country":"New Zealand","postcode":44406,"coordinates":{"latitude":"49.2085","longitude":"-22.4905"},"timezone":{"offset":"-6:00","description":"Central Time (US & Canada), Mexico City"}},"email":"mason.hughes@example.com","login":{"uuid":"b437d926-1390-412a-8e28-90914ac882e8","username":"blackleopard660","password":"trial","salt":"goKbgkNV","md5":"c9315c406cc8d8fb936a989563c80a86","sha1":"acb50d71508d414e22cd2c6863d45d7fd9697a43","sha256":"ddf9a2eebaf69e33b386ce3bc3a1333d1540a592b5510d0dc456781c6d8330ab"},"dob":{"date":"1946-07-05T15:57:23.981Z","age":76},"registered":{"date":"2014-10-27T07:08:04.004Z","age":8},"phone":"(267)-551-9577","cell":"(498)-990-8770","id":{"name":"","value":null},"picture":{"large":"https://randomuser.me/api/portraits/men/9.jpg","medium":"https://randomuser.me/api/portraits/med/men/9.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/men/9.jpg"},"nat":"NZ"}],"info":{"seed":"63b922ec304f494e","results":1,"page":1,"version":"1.4"}}';
+        //var texto = '{"results":[{"gender":"male","name":{"title":"Mr","first":"Mason","last":"Hughes"},"location":{"street":{"number":4942,"name":"Stuart Street"},"city":"New Plymouth","state":"Canterbury","country":"New Zealand","postcode":44406,"coordinates":{"latitude":"49.2085","longitude":"-22.4905"},"timezone":{"offset":"-6:00","description":"Central Time (US & Canada), Mexico City"}},"email":"mason.hughes@example.com","login":{"uuid":"b437d926-1390-412a-8e28-90914ac882e8","username":"blackleopard660","password":"trial","salt":"goKbgkNV","md5":"c9315c406cc8d8fb936a989563c80a86","sha1":"acb50d71508d414e22cd2c6863d45d7fd9697a43","sha256":"ddf9a2eebaf69e33b386ce3bc3a1333d1540a592b5510d0dc456781c6d8330ab"},"dob":{"date":"1946-07-05T15:57:23.981Z","age":76},"registered":{"date":"2014-10-27T07:08:04.004Z","age":8},"phone":"(267)-551-9577","cell":"(498)-990-8770","id":{"name":"","value":null},"picture":{"large":"https://randomuser.me/api/portraits/men/9.jpg","medium":"https://randomuser.me/api/portraits/med/men/9.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/men/9.jpg"},"nat":"NZ"}],"info":{"seed":"63b922ec304f494e","results":1,"page":1,"version":"1.4"}}';
         var obj = JSON.parse(texto);
         document.getElementById("demo").innerHTML = "Genero: " + obj.results[0].gender;
         document.getElementById("name").innerHTML = obj.results[0].name.last + " " + obj.results[0].name.first;
