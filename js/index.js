@@ -13,6 +13,11 @@ $.ajax({
     document.getElementById("telefono").innerHTML = persona.phone;
     document.getElementById("correo").innerHTML = persona.email;
     document.getElementById("foto").innerHTML = "<img src='"+persona.picture.large+"' class='circle float-left' alt='...'>";
-
 }
 });
+
+$(document).ready(function(){
+    $(".nav-tabs a").click(function(){
+      $(this).tab('show');
+    });
+  });

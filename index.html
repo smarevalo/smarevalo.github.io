@@ -7,7 +7,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
-        
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
@@ -22,70 +21,78 @@
         
         <main>
 
+            <!-- NAV -->
+
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#">CV</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                      <a class="nav-link active" aria-current="page" href="#">Datos Personales</a>
-                      <a class="nav-link" href="#">Educación</a>
-                      <a class="nav-link" href="#">Experiencia</a>
-                      <a class="nav-link" href="#">Habilidades</a>
-                    </div>
-                  </div>
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a class="nav-link active" href="#datos">Datos Personales</a></li>
+                        <li><a class="nav-link" href="#experiencia">Experiencia</a></li>
+                        <li><a class="nav-link" href="#educacion">Educación</a></li>
+                        <li><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    </ul>
                 </div>
             </nav>
 
-            
-            <section class="container">
-                <div class="left-column">
-                    <h3>Información Personal</h3>
-                    <ul>
-                        <li><strong>Nombre completo:</strong><span id="nombre"></span></li>
-                        <li><strong>Fecha de nacimiento:</strong><span id="nacimiento"></span></li>
-                        <li><strong>Dirección:</strong><span id="direccion"></span></li>
-                        <li><strong>Teléfono:</strong><span id="telefono"></span></li>
-                        <li><strong>Correo electrónico:</strong><span id="correo"></span></li>
-                    </ul>
-                </div>
-                <div class="right-column">
-                    <span id="foto" ></span>
-                </div>
-               
-            </section>
+            <div class="tab-content">
+                <!-- DATOS PERSONALES -->
+                <section class="container tab-pane fade show active" id="datos">
+                    <div><h3>Datos Personales</h3></div>
+                    <div class="row">
+                        <div class="col-8">
+                            <ul>
+                                <li><strong>Nombre completo:</strong><span id="nombre"></span></li>
+                                <li><strong>Fecha de nacimiento:</strong><span id="nacimiento"></span></li>
+                                <li><strong>Dirección:</strong><span id="direccion"></span></li>
+                                <li><strong>Teléfono:</strong><span id="telefono"></span></li>
+                                <li><strong>Correo electrónico:</strong><span id="correo"></span></li>
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <span id="foto" ></span>
+                        </div>
+                    </div>
+                
+                </section>
 
+                <!-- EXPERIENCIA -->
+                <section class="container tab-pane fade" id="experiencia">
+                    <div class="right-column">
+                        
+                        <h3>Experiencia Laboral</h3>
+                
+                        <div class="experience">
+                    </div>
+                </section>
 
-            <section class="container">
-                <h3>Habilidades</h3>
-                    <ul class="skills">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>PHP</li>
-                        <li>MySQL</li>
-                    </ul>
-            
-                    <h3>Idiomas</h3>
-                    <ul>
-                        <li>Español - Nativo</li>
-                        <li>Inglés - Intermedio</li>
-                    </ul>
-            </section>
+                <!-- EDUCACION -->
+                <section class="container tab-pane fade" id="educacion">
+                    <div class="right-column">
+                        
+                        <h3>Educación</h3>
+                        
+                        <div class="experience">
+                    </div>
+                </section>
 
-            
-            <section class="container">
-                <div class="right-column">
-                    
-                    <h3>Experiencia Laboral</h3>
-            
-                    <div class="experience">
-                </div>
-            </section>
-
-
+                <!-- HABILIDADES -->
+                <section class="container tab-pane fade" id="habilidades">
+                    <h3>Habilidades</h3>
+                        <ul class="skills">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>PHP</li>
+                            <li>MySQL</li>
+                        </ul>
+                
+                        <h3>Idiomas</h3>
+                        <ul>
+                            <li>Español - Nativo</li>
+                            <li>Inglés - Intermedio</li>
+                        </ul>
+                </section>
+            </div>
         </main>
 
     </body>
