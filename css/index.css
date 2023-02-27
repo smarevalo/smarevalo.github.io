@@ -11,7 +11,7 @@
 		margin: 50px auto;
 		background-color: #f9f9f9;
 		padding: 30px;
-		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+		box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
 	}
 
 	h3 {
@@ -55,7 +55,14 @@
 		margin-bottom: 10px;
 	}
 
+	section h3 {
+		font-family: 'Audiowide', cursive;
+	}
+	
+
 	.experience {
+		font-family: 'Josefin Sans', sans-serif;
+		font-size: 24px;
 		margin-bottom: 30px;
 		border-bottom: 1px solid #ccc;
 		padding-bottom: 20px;
@@ -75,11 +82,17 @@
 		margin-bottom: 5px;
 	}
 
+	.experience h2 {
+		font-family: 'Lobster Two', cursive;
+		font-weight: bold;
+	}
+
 	.skills li {
+		font-family: 'Oswald', sans-serif;
 		display: inline-block;
-		background-color: #f2f2f2;
+		background-color: #d8d4d4;
 		color: #2d2d2d;
-		font-size: 14px;
+		font-size: 24px;
 		padding: 5px 10px;
 		margin-right: 10px;
 		margin-bottom: 10px;
@@ -88,5 +101,37 @@
 
     img {
         border-radius: 50%;
-      }
+    }
 
+	.education { 
+		font-family: 'Josefin Sans', sans-serif;
+		font-size: 24px;
+	}
+
+	.education h2 {
+		font-family: 'Lobster Two', cursive;
+		font-weight: bold;
+	}
+
+	.nav-link {
+		font-family: 'Audiowide', cursive;
+	}
+
+	#textoidioma { 
+		font-family: 'Lustria', serif;
+		font-size: 24px;
+	}
+
+	#textoidioma li { 
+		margin-left: 20px;
+	}
+
+	#datos ul li {
+		font-family: 'Lobster Two', cursive;
+		font-size: larger;
+	}
+
+	#datos ul li span{
+		font-family: 'Josefin Sans', sans-serif;
+		font-size: 24px;
+	}
